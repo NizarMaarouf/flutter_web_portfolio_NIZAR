@@ -39,13 +39,6 @@ Or Support me on Patreon
 NizarMaarouf [![Twitter Follow](https://img.shields.io/twitter/follow/NizarMaarouf.svg?style=social)](https://twitter.com/NizarMaarouf)
 
 
-![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589180/assets/web1_y9yrmi.png)
-![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589179/assets/web2_zn7w5n.png)
-![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589176/assets/web3_mmq07i.png)
-![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589176/assets/web4_ewgepc.png)
-![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589180/assets/web5_pqw6x2.png)
-![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589190/assets/web6_bdngkk.png)
-![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589174/assets/web7_yhg33u.png)
 
 
 
