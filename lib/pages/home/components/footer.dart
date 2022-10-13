@@ -1,5 +1,6 @@
+// ignore_for_file: missing_required_param
+
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:web_portfolio/models/footer_item.dart';
@@ -10,26 +11,27 @@ final List<FooterItem> footerItems = [
   FooterItem(
     iconPath: "assets/mappin.png",
     title: "ADDRESS",
-    text1: "999 Carter Street",
-    text2: "Sailor Springs, IL 64234",
+    text1: "Ibillin North Israel",
+    text2: "P.O.BOX 2137, IL 30012",
   ),
   FooterItem(
     iconPath: "assets/phone.png",
     title: "PHONE",
-    text1: "+1 618-689-9604",
-    text2: "+1 781-689-9632",
+    text1: "+972 052-7908901",
+    text2: "+972 04-6645594",
   ),
   FooterItem(
     iconPath: "assets/email.png",
     title: "EMAIL",
-    text1: "hello@example.com",
-    text2: "info@flutterpanda.com",
+    text1: "nizar.maarouf1974.nm@gmail.com",
+    text2: "nizar1974.maarouf@gmail.com",
   ),
   FooterItem(
     iconPath: "assets/whatsapp.png",
     title: "WHATSAPP",
-    text1: "+234 901-134-0095",
-    text2: "+234 901-134-0095",
+    text1: "+972 52 790 8901",
+    text2: "",
+    
   )
 ];
 
@@ -37,6 +39,7 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: FooterColor,
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth, context),
         tablet: _buildUi(kTabletMaxWidth, context),
@@ -103,14 +106,14 @@ Widget _buildUi(double width, BuildContext context) {
                                       TextSpan(
                                         text: "${footerItem.text1}\n",
                                         style: TextStyle(
-                                          color: kCaptionColor,
+                                           color: Colors.grey[500],
                                           height: 1.8,
                                         ),
                                       ),
                                       TextSpan(
                                         text: "${footerItem.text2}\n",
                                         style: TextStyle(
-                                          color: kCaptionColor,
+                                          color: Colors.grey[500],
                                         ),
                                       )
                                     ],
@@ -138,7 +141,7 @@ Widget _buildUi(double width, BuildContext context) {
                   Padding(
                     padding: EdgeInsets.only(bottom: 8.0),
                     child: Text(
-                      "Copyright (c) 2021 Michele Harrington. All rights Reserved",
+                      "Copyright (c) 2021 Nizar Maarouf. All rights Reserved",
                       style: TextStyle(
                         color: kCaptionColor,
                       ),

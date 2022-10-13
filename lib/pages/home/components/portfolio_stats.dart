@@ -6,16 +6,17 @@ import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
 final List<Stat> stats = [
-  Stat(count: "43", text: "Clients"),
+  Stat(count: "10", text: "Clients"),
   Stat(count: "68+", text: "Projects"),
   Stat(count: "17", text: "Awards"),
-  Stat(count: "10", text: "Years\nExperience"),
+  Stat(count: "5", text: "Years\nExperience"),
 ];
 
 class PortfolioStats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color:TESTColor,
       alignment: Alignment.center,
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth, context),
@@ -61,7 +62,7 @@ class PortfolioStats extends StatelessWidget {
                         stat.text,
                         style: TextStyle(
                           fontSize: 16.0,
-                          color: kCaptionColor,
+                          color: Colors.grey[400],
                         ),
                       )
                     ],

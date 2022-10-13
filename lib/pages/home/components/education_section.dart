@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:web_portfolio/models/education.dart';
@@ -9,27 +8,38 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 final List<Education> educationList = [
   Education(
     description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2019 - PRESENT",
+        "Electrical engineering student completing strong current specialization, Kinneret Academic College.",
+    linkName: "https://nizar-maarouf-portfolio.netlify.app/",
+    period: "2022-Present:",
   ),
   Education(
     description:
-        "This is a sample education and details about it is stated below.This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2018 - 2019",
+        "B.Sc. in Electrical and Electronics Engineering, Ruppin Academic Center.\nProjects\n "
+       " ▪ Graduation project: Comparison and analysis of machine learning algorithms to classify words "
+       "   that begin with the letter “A ”( ““أA’alif ) in precise Arabic writing using a Python design"
+       "   language, including machine learning and building a database with the suited coding.\n"
+       " ▪ Programing and implementation of a CLASS D amplifier model - Ruppin Academic Center .\n"
+       " ▪ VHDL project, programmed the UART communication between a board (Altera DE1 FPGA) and a computer .",
+    linkName: "https://nizar-maarouf-portfolio.netlify.app/",
+    period: "2017-2022:",
   ),
   Education(
     description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2017 - 2018",
+        "Diploma in Construction Project Management, Technion- Haifa",
+    linkName: "https://nizar-maarouf-portfolio.netlify.app/",
+    period: "2006-2007:",
   ),
   Education(
     description:
-        "This is a sample education and details about it is stated below. This is a sample education and details about it is stated below",
-    linkName: "www.flutterpanda.com",
-    period: "2016 - 2017",
+        "Diploma, professional consultations (expertise) and arbitration, Association of Engineers - Haifa.",
+    linkName: "https://nizar-maarouf-portfolio.netlify.app/",
+    period: "2001-2003:",
+  ),
+    Education(
+    description:
+        "B.Sc. in Civil Engineering Technion, Haifa",
+    linkName: "https://nizar-maarouf-portfolio.netlify.app/",
+    period: "1995-1999:",
   ),
 ];
 
@@ -47,6 +57,7 @@ class EducationSection extends StatelessWidget {
 
   Widget _buildUi(double width) {
     return Container(
+      color: EducationColor,
       alignment: Alignment.center,
       child: ResponsiveWrapper(
         maxWidth: width,
@@ -110,10 +121,10 @@ class EducationSection extends StatelessWidget {
                                 ),
                                 Text(
                                   education.description,
-                                  maxLines: 4,
+                                  maxLines: 12,
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
-                                    color: kCaptionColor,
+                                    color: Colors.grey[300],
                                     height: 1.5,
                                   ),
                                 ),

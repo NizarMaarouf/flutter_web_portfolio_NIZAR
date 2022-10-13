@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:web_portfolio/models/design_process.dart';
@@ -37,6 +36,7 @@ class CvSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: TESTColor,
       width: double.infinity,
       child: ScreenHelper(
         desktop: _buildUi(context, kDesktopMaxWidth),
@@ -74,7 +74,7 @@ class CvSection extends StatelessWidget {
                   child: Text(
                     "DOWNLOAD CV",
                     style: GoogleFonts.oswald(
-                      color: kPrimaryColor,
+                      color: Colors.grey[500],
                       fontWeight: FontWeight.w900,
                       fontSize: 16.0,
                     ),
@@ -137,7 +137,7 @@ class CvSection extends StatelessWidget {
                           Text(
                             designProcesses[index].subtitle,
                             style: TextStyle(
-                              color: kCaptionColor,
+                              color: Colors.grey[400],
                               height: 1.5,
                               fontSize: 14.0,
                             ),

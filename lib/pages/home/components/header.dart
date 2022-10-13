@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -10,25 +9,26 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 List<HeaderItem> headerItems = [
   HeaderItem(
-    title: "HOME",
-    onTap: () {},
+    title: "HOME" ,
+    onTap: () {}
   ),
-  HeaderItem(title: "MY INTRO", onTap: () {}),
-  HeaderItem(title: "SERVICES", onTap: () {}),
+  HeaderItem(title: "SKILS", onTap: () {}),
+  HeaderItem(title: "CONTACTS", onTap: () {}),
   HeaderItem(title: "PORTFOLIO", onTap: () {}),
   HeaderItem(title: "TESTIMONIALS", onTap: () {}),
-  HeaderItem(title: "BLOGS", onTap: () {}),
+  HeaderItem(title: "PROJECTS", onTap: () {}),
   HeaderItem(
     title: "HIRE ME",
     onTap: () {},
     isButton: true,
-  ),
+  )
 ];
 
 class HeaderLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // color:FooterColor,
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
         child: GestureDetector(
@@ -37,18 +37,18 @@ class HeaderLogo extends StatelessWidget {
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: "M",
+                  text: "N",
                   style: GoogleFonts.oswald(
-                    color: Colors.white,
-                    fontSize: 32.0,
+                    color: Colors.grey[800],
+                    fontSize: 50.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 TextSpan(
-                  text: ".",
+                  text: "+",
                   style: GoogleFonts.oswald(
                     color: kPrimaryColor,
-                    fontSize: 36.0,
+                    fontSize: 40.0,
                     fontWeight: FontWeight.bold,
                   ),
                 )
@@ -69,51 +69,57 @@ class HeaderRow extends StatelessWidget {
       visibleWhen: [
         Condition.largerThan(name: MOBILE),
       ],
-      child: Row(
-        children: headerItems
-            .map(
-              (item) => item.isButton
-                  ? MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: kDangerColor,
-                          borderRadius: BorderRadius.circular(8.0),
+      child: Container(
+        width: 800,
+        height: 60,
+        padding: EdgeInsets.only(left: 30),
+        color: FooterColor,
+        child: Row(
+          children: headerItems
+              .map(
+                (item) => item.isButton
+                    ? MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: kDangerColor,
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 20.0, vertical: 5.0),
+                          child: TextButton(
+                            onPressed: item.onTap,
+                            child: Text(
+                              item.title,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 13.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
                         ),
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 20.0, vertical: 5.0),
-                        child: TextButton(
-                          onPressed: item.onTap,
-                          child: Text(
-                            item.title,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 13.0,
-                              fontWeight: FontWeight.bold,
+                      )
+                    : MouseRegion(
+                        cursor: SystemMouseCursors.click,
+                        child: Container(
+                          margin: EdgeInsets.only(right: 30.0),
+                          child: GestureDetector(
+                            onTap: item.onTap,
+                            child: Text(
+                              item.title,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 13.0,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    )
-                  : MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: Container(
-                        margin: EdgeInsets.only(right: 30.0),
-                        child: GestureDetector(
-                          onTap: item.onTap,
-                          child: Text(
-                            item.title,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 13.0,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-            )
-            .toList(),
+              )
+              .toList(),
+        ),
       ),
     );
   }

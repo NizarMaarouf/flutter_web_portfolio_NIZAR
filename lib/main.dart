@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           ResponsiveBreakpoint.resize(2460, name: "4K"),
         ],
         background: Container(
-          color: kBackgroundColor,
+          color: HeadColor,
         ),
       ),
       home: Home(),

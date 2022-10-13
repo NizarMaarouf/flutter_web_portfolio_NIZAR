@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:web_portfolio/utils/constants.dart';
@@ -10,6 +9,7 @@ class WebsiteAd extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: kDangerColor,
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth),
         tablet: _buildUi(kTabletMaxWidth),
@@ -51,7 +51,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         Text(
-                          "EVOLVING NAGA\nRESORT WEBSITE",
+                          "Tesla_Web-Site_Project\nA website for TESLA",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
@@ -63,7 +63,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         Text(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "Tesla_Web-Site_Project My first project in the course, the task of developing an online site as close as possible to the official site without using ready-made codes, I think I succeeded !!!!!!!!.",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,

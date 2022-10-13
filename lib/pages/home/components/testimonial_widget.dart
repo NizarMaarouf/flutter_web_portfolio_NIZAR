@@ -8,16 +8,16 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 final List<Testimonial> testimonials = [
   Testimonial(
     text:
-        "This is a testimonial text from Janny Stone. Michele is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
-    occupation: "Product Designer",
-    personName: "JANNY STONE",
+        "This is a testimonial text from Kasem Alem . Nizar is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
+    occupation: "Senior SW engineer",
+    personName: "Kasem Alem ",
     profilePhoto: "assets/female.png",
   ),
   Testimonial(
     text:
-        "This is a testimonial text from Ken Williams. Michele is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
-    occupation: "Art Director",
-    personName: "KEN WILLIAMS",
+        "This is a testimonial text from Kamel Khatib. Nizar is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
+    occupation: "Net Develope",
+    personName: "Kamel Khatib",
     profilePhoto: "assets/male.png",
   )
 ];
@@ -26,6 +26,7 @@ class TestimonialWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: TESTColor,
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth),
         tablet: _buildUi(kTabletMaxWidth),
@@ -71,12 +72,12 @@ Widget _buildUi(double width) {
                       TextSpan(
                           text: " click here to contact us",
                           style: TextStyle(
-                            color: kPrimaryColor,
+                            color: Colors.grey[500],
                             fontWeight: FontWeight.w700,
                             height: 1.8,
                           )),
                       TextSpan(
-                        text: ". Please subscribe to me youtube channel :-)",
+                        text: ". NIZAR MAAROUF  :-)",
                         style: TextStyle(color: Colors.white, height: 1.8),
                       ),
                     ],
@@ -112,7 +113,7 @@ Widget _buildUi(double width) {
                           Text(
                             testimonial.text,
                             style: TextStyle(
-                              color: kCaptionColor,
+                              color: Colors.grey[400],
                               height: 1.8,
                             ),
                           ),
@@ -148,7 +149,7 @@ Widget _buildUi(double width) {
                                   Text(
                                     testimonial.occupation,
                                     style: TextStyle(
-                                      color: kCaptionColor,
+                                      color: Colors.grey[400],
                                     ),
                                   )
                                 ],

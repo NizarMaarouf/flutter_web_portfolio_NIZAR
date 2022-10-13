@@ -8,14 +8,14 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 List<Skill> skills = [
   Skill(
     skill: "Dart",
-    percentage: 62,
+    percentage: 82,
   ),
   Skill(
     skill: "Javascript",
     percentage: 80,
   ),
   Skill(
-    skill: "PHP",
+    skill: "Flutter",
     percentage: 78,
   ),
   Skill(
@@ -23,8 +23,20 @@ List<Skill> skills = [
     percentage: 90,
   ),
   Skill(
-    skill: "GoLang",
-    percentage: 40,
+    skill: "Html",
+    percentage: 95,
+  ),
+   Skill(
+    skill: "Css",
+    percentage: 93,
+  ),
+   Skill(
+    skill: "C",
+    percentage: 98,
+  ),
+   Skill(
+    skill: "C++",
+    percentage: 75,
   ),
 ];
 
@@ -32,6 +44,8 @@ class SkillSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
+      color : SkilsColor,
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth),
         tablet: _buildUi(kTabletMaxWidth),
@@ -55,12 +69,12 @@ class SkillSection extends StatelessWidget {
                 Expanded(
                   flex: ScreenHelper.isMobile(context) ? 0 : 2,
                   child: Image.asset(
-                    "assets/person_small.png",
-                    width: 300.0,
+                    "assets/nizar_small.png",
+                    width: 350.0,
                   ),
                 ),
                 SizedBox(
-                  width: 50.0,
+                  width: 30.0,
                 ),
                 Expanded(
                   flex: ScreenHelper.isMobile(context) ? 0 : 4,
@@ -73,7 +87,7 @@ class SkillSection extends StatelessWidget {
                         style: GoogleFonts.oswald(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
-                          fontSize: 28.0,
+                          fontSize: 30.0,
                           height: 1.3,
                         ),
                       ),
@@ -81,9 +95,9 @@ class SkillSection extends StatelessWidget {
                         height: 10.0,
                       ),
                       Text(
-                        "This is all the skills listed below more will be added in due time. This is all the skills listed below more will be added in due time.",
+                        "This is all the skills listed below more will be added in due time.",
                         style: TextStyle(
-                          color: kCaptionColor,
+                           color: Colors.grey[500],
                           height: 1.5,
                           fontSize: 16.0,
                         ),

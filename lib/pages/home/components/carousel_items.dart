@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:web_portfolio/models/carousel_item_model.dart';
 import 'package:web_portfolio/utils/constants.dart';
@@ -7,25 +6,30 @@ import 'package:web_portfolio/utils/constants.dart';
 List<CarouselItemModel> carouselItems = List.generate(
   5,
   (index) => CarouselItemModel(
+    // informaition about me nizar
     text: Container(
+
+      padding: EdgeInsets.all(20),
+      height: 585,
+      color: HeadColor,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.max,
         children: [
           Text(
-            "PRODUCT DESIGNER",
+            "Electrical Engineer",
             style: GoogleFonts.oswald(
               color: kPrimaryColor,
               fontWeight: FontWeight.w900,
-              fontSize: 16.0,
+              fontSize: 18.0,
             ),
           ),
           SizedBox(
-            height: 18.0,
+            height: 15.0,
           ),
           Text(
-            "MICHELE\nHARRINGTON",
+            "NIZAR\nMAAROUF",
             style: GoogleFonts.oswald(
               color: Colors.white,
               fontSize: 40.0,
@@ -34,18 +38,18 @@ List<CarouselItemModel> carouselItems = List.generate(
             ),
           ),
           SizedBox(
-            height: 10.0,
+            height: 15.0,
           ),
           Text(
-            "Full-stack developer, based in Barcelona",
+            "Flutter Application developer\nBased in Ibillin (North_Israel)",
             style: TextStyle(
               color: kCaptionColor,
-              fontSize: 15.0,
+              fontSize: 18.0,
               height: 1.0,
             ),
           ),
           SizedBox(
-            height: 10.0,
+            height: 15.0,
           ),
           Container(
             child: Wrap(
@@ -67,7 +71,8 @@ List<CarouselItemModel> carouselItems = List.generate(
                       style: TextStyle(
                         height: 1.5,
                         color: Colors.white,
-                        fontSize: 15.0,
+                        fontWeight: FontWeight.w900,
+                        fontSize: 18.0,
                       ),
                     ),
                   ),
@@ -76,10 +81,11 @@ List<CarouselItemModel> carouselItems = List.generate(
             ),
           ),
           SizedBox(
-            height: 25.0,
+            height: 20.0,
           ),
           MouseRegion(
             cursor: SystemMouseCursors.click,
+            //text button get start
             child: Container(
               decoration: BoxDecoration(
                 color: kPrimaryColor,
@@ -105,10 +111,14 @@ List<CarouselItemModel> carouselItems = List.generate(
         ],
       ),
     ),
-    image: Container(
+    // main image nizar
+    image: Container(      
+      padding: EdgeInsets.all(0),
+      height: 585,
+      color: HeadColor,
       child: Image.asset(
-        "assets/person.png",
-        fit: BoxFit.contain,
+        "assets/nizar.png",
+        fit: BoxFit.fill,
       ),
     ),
   ),

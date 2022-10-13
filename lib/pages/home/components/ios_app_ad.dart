@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:responsive_framework/responsive_framework.dart';
+import 'package:responsive_framework/responsive_wrapper.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
 class IosAppAd extends StatelessWidget {
+  // We can use same idea as ios_app_ad.dart and swap children order, let's copy code
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: kDangerColor,
       child: ScreenHelper(
         desktop: _buildUi(kDesktopMaxWidth),
         tablet: _buildUi(kTabletMaxWidth),
@@ -34,20 +35,12 @@ class IosAppAd extends StatelessWidget {
                   // Disable expanded on smaller screen to avoid Render errors by setting flex to 0
                   Expanded(
                     flex: constraints.maxWidth > 720.0 ? 1 : 0,
-                    child: Image.asset(
-                      "assets/ios.png",
-                      // Set width for image on smaller screen
-                      width: constraints.maxWidth > 720.0 ? null : 350.0,
-                    ),
-                  ),
-                  Expanded(
-                    flex: constraints.maxWidth > 720.0 ? 1 : 0,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "IOS APP",
+                          "IOS GAME",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -58,7 +51,7 @@ class IosAppAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         Text(
-                          "UNIVERSAL\nSMART HOME APP",
+                          "My-Minecraft-app\nMinecraft Game",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
@@ -70,7 +63,9 @@ class IosAppAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         Text(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "Minecraft Game My first game in the course, the task of"
+                          "developing an online game as close as possible to the official"
+                          "game without using ready-made codes, I think I succeeded !!!!!!!!.",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,
@@ -138,10 +133,24 @@ class IosAppAd extends StatelessWidget {
                               ),
                             )
                           ],
+                        ),
+                        SizedBox(
+                          height: 70.0,
                         )
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(
+                    width: 25.0,
+                  ),
+                  Expanded(
+                    flex: constraints.maxWidth > 720.0 ? 1 : 0,
+                    child: Image.asset(
+                      "assets/ios.png",
+                      // Set width for image on smaller screen
+                      width: constraints.maxWidth > 720.0 ? null : 350.0,
+                    ),
+                  ),
                 ],
               ),
             ),
