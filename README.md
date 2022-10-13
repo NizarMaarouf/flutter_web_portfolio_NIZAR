@@ -1,15 +1,12 @@
-# 🔥 🔥 Flutter Web Portfolio 🔥 🔥 💫 ⭐️ ⭐️ 👨‍💻 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Twitter Follow](https://img.shields.io/twitter/follow/iam_olayemii.svg?style=social)](https://twitter.com/iam_olayemii)
+0# 🔥 🔥 Flutter Web Portfolio 🔥 🔥 💫 ⭐️ ⭐️ 👨‍💻 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Twitter Follow](https://img.shields.io/twitter/follow/iam_olayemii.svg?style=social)](https://twitter.com/iam_olayemii)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/olayemii/flutter-web-portfolio?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/olayemii/flutter-web-portfolio?style=social) ![GitHub followers](https://img.shields.io/github/followers/olayemii?style=social)
+![GitHub Repo stars](https://github.com/NizarMaarouf/flutter_web_portfolio_NIZAR) ![GitHub watchers](https://img.shields.io/github/watchers//NizarMaarouf/flutter_web_portfolio_NIZAR) style=social)
 
 ### Demo URL
-https://web-portfolio-ddd55.web.app
+https://github.com/NizarMaarouf/flutter_web_portfolio_NIZAR
 
 
-### SpeedCode Tutorial
-https://youtu.be/MD9_J09I6ew
 
-https://youtu.be/lZ5hhEpnn3s
 
 Web Portfolio, Based on a design on UpLabs and hosted on Firebase 💓.
 
@@ -39,25 +36,16 @@ Or Support me on Patreon
 
 ### 👨‍💻 Author
 
-Olayemi Garuba [![Twitter Follow](https://img.shields.io/twitter/follow/iam_olayemii.svg?style=social)](https://twitter.com/iam_olayemii)
+Olayemi Garuba [![Twitter Follow](https://img.shields.io/twitter/follow/NizarMaarouf.svg?style=social)](https://twitter.com/NizarMaarouf)
 
 
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/v1613589180/assets/web1_y9yrmi.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/v1613589179/assets/web2_zn7w5n.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/v1613589176/assets/web3_mmq07i.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/v1613589176/assets/web4_ewgepc.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/v1613589180/assets/web5_pqw6x2.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/v1613589190/assets/web6_bdngkk.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/v1613589174/assets/web7_yhg33u.png)
+![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589180/assets/web1_y9yrmi.png)
+![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589179/assets/web2_zn7w5n.png)
+![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589176/assets/web3_mmq07i.png)
+![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589176/assets/web4_ewgepc.png)
+![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589180/assets/web5_pqw6x2.png)
+![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589190/assets/web6_bdngkk.png)
+![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589174/assets/web7_yhg33u.png)
 
 
-
-#### Mobile Screens
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/c_scale,w_250/v1613589167/assets/phone1_ptibcj.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/c_scale,w_250/v1613589168/assets/phone2_sm6lmt.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/c_scale,w_250/v1613589170/assets/phone3_ec7iwb.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/c_scale,w_250/v1613589169/assets/phone4_xwldjr.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/c_scale,w_250/v1613589172/assets/phone5_qb51tt.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/c_scale,w_250/v1613589169/assets/phone6_x8ynjy.png)
-![Screenshot](https://res.cloudinary.com/olayemii/image/upload/c_scale,w_250/v1613589172/assets/phone7_szij23.png)
 
