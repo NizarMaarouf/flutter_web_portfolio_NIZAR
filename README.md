@@ -36,7 +36,7 @@ Or Support me on Patreon
 
 ### 👨‍💻 Author
 
-Olayemi Garuba [![Twitter Follow](https://img.shields.io/twitter/follow/NizarMaarouf.svg?style=social)](https://twitter.com/NizarMaarouf)
+NizarMaarouf [![Twitter Follow](https://img.shields.io/twitter/follow/NizarMaarouf.svg?style=social)](https://twitter.com/NizarMaarouf)
 
 
 ![Screenshot](https://res.cloudinary.com/NizarMaarouf/image/upload/v1613589180/assets/web1_y9yrmi.png)
